@@ -23,7 +23,7 @@ var Testimonies = (function () {
             selector: 'g-testimonies',
             templateUrl: './app/views/testimonies.component.html',
             styleUrls: ['./app/css/testimonies.css']
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], Testimonies);
     return Testimonies;

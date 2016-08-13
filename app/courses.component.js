@@ -46,7 +46,7 @@ var Courses = (function () {
             selector: 'g-courses',
             templateUrl: './app/views/courses.component.html',
             styleUrls: ['./app/css/courses.css'],
-        }),
+        }), 
         __metadata('design:paramtypes', [http_1.Http])
     ], Courses);
     return Courses;

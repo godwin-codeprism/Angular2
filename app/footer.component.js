@@ -18,7 +18,7 @@ var Footer = (function () {
             selector: 'g-footer',
             templateUrl: './app/views/footer.component.html',
             styleUrls: ['./app/css/footer.css']
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], Footer);
     return Footer;

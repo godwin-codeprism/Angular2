@@ -17,7 +17,7 @@ var Banner = (function () {
             selector: 'g-banner',
             templateUrl: './app/views/banner.component.html',
             styleUrls: ['./app/css/banner.css']
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], Banner);
     return Banner;

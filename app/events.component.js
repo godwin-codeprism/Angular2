@@ -24,7 +24,7 @@ var Events = (function () {
             selector: 'g-events',
             templateUrl: './app/views/events.component.html',
             styleUrls: ['./app/css/events.css']
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], Events);
     return Events;

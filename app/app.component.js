@@ -26,7 +26,7 @@ var AppComponent = (function () {
             templateUrl: './app/views/app.component.html',
             directives: [nav_component_1.Nav, banner_component_1.Banner, events_component_1.Events, courses_component_1.Courses, testimonies_component_1.Testimonies, clients_component_1.Clients, footer_component_1.Footer],
             providers: [http_1.HTTP_PROVIDERS]
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;

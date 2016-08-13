@@ -18,7 +18,7 @@ var Clients = (function () {
             selector: 'g-clients',
             templateUrl: './app/views/clients.component.html',
             styleUrls: ['./app/css/clients.css']
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], Clients);
     return Clients;
