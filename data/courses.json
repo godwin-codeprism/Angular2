@@ -1,0 +1,50 @@
+[
+    {
+        "image": "./app/images/ITIL-Foundation.png",
+        "title": "ITIL Foundation",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "url": "#"
+    },
+    {
+        "image": "./app/images/ITIL-Intermediate.png",
+        "title": "ITIL Intermediate",
+        "text": "Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "url": "#"
+    },
+    {
+        "image": "./app/images/ITIL-Service-Strategy.png",
+        "title": "ITIL Service Strategy",
+        "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "url": "#"
+    },
+    {
+        "image": "./app/images/ITIL-Service-Design.png",
+        "title": "ITIL Service Design",
+        "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "url": "#"
+    },
+    {
+        "image": "./app/images/ITIL-Service-Transition.png",
+        "title": "ITIL Service Transition",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "url": "#"
+    },
+    {
+        "image": "./app/images/ITIL-Service-Operation.png",
+        "title": "ITIL Service Operation",
+        "text": "Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "url": "#"
+    },
+    {
+        "image": "./app/images/ITIL-Continual-Service-Improvement.png",
+        "title": "ITIL Continual Service Improvement",
+        "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "url": "#"
+    },
+    {
+        "image": "./app/images/ITIL-SOA.png",
+        "title": "ITIL SOA",
+        "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "url": "#"
+    }
+]

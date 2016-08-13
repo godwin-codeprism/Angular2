@@ -1,0 +1,18 @@
+.events{
+    box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.2);
+    padding: 0px;
+}
+
+.event-date{
+    border-radius: 4px;
+    width: 100%;
+    background-color: #bddad4;
+    box-shadow: 0px 0px 8px rgba(44, 62, 80, 0.50);
+}
+
+.panel-events {
+    width: 100%;
+    max-height: 335px;
+    overflow-y: hidden;
+    position: relative;
+}

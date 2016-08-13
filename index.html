@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href="/">
+    <title>QuickLearn Systems</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- 1. Load libraries -->
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/theme/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.min.js"></script>
+    <!-- G-codes -->
+    <link rel='stylesheet' href='app/css/globals.css'>
+    <!-- Polyfill(s) for older browsers -->
+    <script src='node_modules/core-js/client/shim.min.js'></script>
+    <script src='node_modules/zone.js/dist/zone.js'></script>
+    <script src='node_modules/reflect-metadata/Reflect.js'></script>
+    <script src='node_modules/systemjs/dist/system.src.js'></script>
+    <!-- 2. Configure SystemJS -->
+    <script src='systemjs.config.js'></script>
+    <script>
+        System.import('app').catch(function (err) {
+            console.error(err);
+        });
+    </script>
+    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+        window.$zopim || (function (d, s) {
+            var z = $zopim = function (c) {
+                    z._.push(c)
+                },
+                $ = z.s =
+                d.createElement(s),
+                e = d.getElementsByTagName(s)[0];
+            z.set = function (o) {
+                z.set.
+                _.push(o)
+            };
+            z._ = [];
+            z.set._ = [];
+            $.async = !0;
+            $.setAttribute("charset", "utf-8");
+            $.src = "//v2.zopim.com/?48FqguE14noVsukSVvjSZIu55n55gBfo";
+            z.t = +new Date;
+            $.
+            type = "text/javascript";
+            e.parentNode.insertBefore($, e)
+        })(document, "script");
+    </script>
+    <!--End of Zopim Live Chat Script-->
+</head>
+<!-- 4. Display the application -->
+
+<body>
+    <qls>Loading...</qls>
+</body>
+
+</html>

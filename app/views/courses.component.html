@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="col-md-12 text-center">
+        <h2>Courses We Offer</h2>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Search for courses" [(ngModel)]="query" (ngModelChange)="onSearch($event)">
+                    <span class="input-group-addon btn btn-primary"><i class="fa fa-search"></i> Search</span>
+                </div>
+                <hr class="divider" style="border-top: 1px solid #3e4f5f;">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="col-sm-3" *ngFor="let course of courses">
+            <div class="container card">
+                <div class="col-sm-12 card-image">
+                    <img src="{{course.image}}" alt="{{course.title}}" width="100%" />
+                </div>
+                <div class="col-sm-12 card-content text-left">
+                    <h4 class="text-primary">{{course.title}}</h4>
+                    <p>{{course.text}}</p>
+                    <hr class="card-divider" style="border-top: 1px solid #ddd;">
+                    <div class="col-sm-12 text-right card-btn">
+                        <button class="btn btn-primary btn-sm">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
