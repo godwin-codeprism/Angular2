@@ -9,13 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var nav_component_1 = require('./nav.component');
+var footer_component_1 = require('./footer.component');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'qls',
-            templateUrl: './app/views/app.component.html'
+            templateUrl: './app/views/app.component.html',
+            directives: [nav_component_1.Nav, footer_component_1.Footer]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

@@ -5,7 +5,8 @@ import {HTTP_PROVIDERS} from '@angular/http'
 
 import { AppComponent } from './app.component';
 import {routing, appRoutingProviders} from './app.routing';
-import {HomeComponent} from './home.component'
+import {HomeComponent} from './home.component';
+import {AboutComponent} from './about.component'
 
 @NgModule({
     imports: [
@@ -13,7 +14,7 @@ import {HomeComponent} from './home.component'
         FormsModule,
         routing
     ],
-    declarations: [AppComponent, HomeComponent],
+    declarations: [AppComponent, HomeComponent, AboutComponent],
     providers: [appRoutingProviders],
     bootstrap: [AppComponent]
 })
