@@ -4,13 +4,17 @@ import {FormsModule} from '@angular/forms';
 import {HTTP_PROVIDERS} from '@angular/http'
 
 import { AppComponent } from './app.component';
+import {routing, appRoutingProviders} from './app.routing';
+import {HomeComponent} from './home.component'
 
 @NgModule({
-    imports:[
+    imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        routing
     ],
-    declarations:[AppComponent],
-    bootstrap:[AppComponent]
+    declarations: [AppComponent, HomeComponent],
+    providers: [appRoutingProviders],
+    bootstrap: [AppComponent]
 })
-export class AppModule {};
+export class AppModule { };
