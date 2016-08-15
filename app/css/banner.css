@@ -5,6 +5,8 @@
     background-size: 100% 100%;
     color: white;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 0px;
+    border-radius: 0px;
 }
 
 .jumbotron h1 {

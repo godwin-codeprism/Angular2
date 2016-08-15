@@ -4,3 +4,7 @@ body {
 .main-container {
     padding: 0px;
 }
+.shadow-container{
+    box-shadow: 0px -25px 40px 0px rgba(0, 0, 0, 0.12);
+    padding-top:5%;
+}

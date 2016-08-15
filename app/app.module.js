@@ -21,6 +21,11 @@ var service_operation_component_1 = require('./service_operation.component');
 var service_transition_component_1 = require('./service_transition.component');
 var service_design_component_1 = require('./service_design.component');
 var service_strategy_component_1 = require('./service_strategy.component');
+var soa_component_1 = require('./soa.component');
+var rcv_component_1 = require('./rcv.component');
+var ppo_component_1 = require('./ppo.component');
+var osa_component_1 = require('./osa.component');
+var malc_component_1 = require('./malc.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -40,7 +45,12 @@ var AppModule = (function () {
                 service_operation_component_1.ServiceOperationComponenet,
                 service_transition_component_1.ServiceTansitionComponent,
                 service_design_component_1.ServiceDesign,
-                service_strategy_component_1.ServiceStrategyComponent
+                service_strategy_component_1.ServiceStrategyComponent,
+                soa_component_1.SOAComponent,
+                rcv_component_1.RCVComponent,
+                ppo_component_1.PPOComponent,
+                osa_component_1.OSAComponent,
+                malc_component_1.MALCComponent
             ],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]

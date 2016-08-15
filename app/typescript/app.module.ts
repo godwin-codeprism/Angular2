@@ -13,7 +13,11 @@ import {ServiceOperationComponenet} from './service_operation.component';
 import {ServiceTansitionComponent} from './service_transition.component';
 import {ServiceDesign} from './service_design.component';
 import {ServiceStrategyComponent} from './service_strategy.component';
-
+import {SOAComponent} from './soa.component';
+import {RCVComponent} from './rcv.component';
+import {PPOComponent} from './ppo.component';
+import {OSAComponent} from './osa.component';
+import {MALCComponent} from './malc.component';
 
 @NgModule({
     imports: [
@@ -30,7 +34,12 @@ import {ServiceStrategyComponent} from './service_strategy.component';
         ServiceOperationComponenet,
         ServiceTansitionComponent,
         ServiceDesign,
-        ServiceStrategyComponent
+        ServiceStrategyComponent,
+        SOAComponent,
+        RCVComponent,
+        PPOComponent,
+        OSAComponent,
+        MALCComponent
         ],
     providers: [appRoutingProviders],
     bootstrap: [AppComponent]
