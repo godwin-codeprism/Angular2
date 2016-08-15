@@ -15,6 +15,12 @@ var app_component_1 = require('./app.component');
 var app_routing_1 = require('./app.routing');
 var home_component_1 = require('./home.component');
 var about_component_1 = require('./about.component');
+var itil_foundation_component_1 = require('./itil_foundation.component');
+var continual_service_component_1 = require('./continual_service.component');
+var service_operation_component_1 = require('./service_operation.component');
+var service_transition_component_1 = require('./service_transition.component');
+var service_design_component_1 = require('./service_design.component');
+var service_strategy_component_1 = require('./service_strategy.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -25,7 +31,17 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 app_routing_1.routing
             ],
-            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, about_component_1.AboutComponent],
+            declarations: [
+                app_component_1.AppComponent,
+                home_component_1.HomeComponent,
+                about_component_1.AboutComponent,
+                itil_foundation_component_1.ItitlFoundationComponent,
+                continual_service_component_1.ContinualServiceComponent,
+                service_operation_component_1.ServiceOperationComponenet,
+                service_transition_component_1.ServiceTansitionComponent,
+                service_design_component_1.ServiceDesign,
+                service_strategy_component_1.ServiceStrategyComponent
+            ],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
         }), 
