@@ -9,16 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var AdminComponent = (function () {
+    function AdminComponent() {
     }
-    AppComponent = __decorate([
+    AdminComponent = __decorate([
         core_1.Component({
-            selector: 'qls',
-            templateUrl: './app/views/app.component.html'
+            templateUrl: './app/views/admin/admin.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], AdminComponent);
+    return AdminComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.AdminComponent = AdminComponent;

@@ -9,16 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var nav_component_1 = require('./nav.component');
+var footer_component_1 = require('./footer.component');
+var UsersComponent = (function () {
+    function UsersComponent() {
     }
-    AppComponent = __decorate([
+    UsersComponent = __decorate([
         core_1.Component({
-            selector: 'qls',
-            templateUrl: './app/views/app.component.html'
+            templateUrl: './app/views/users.component.html',
+            directives: [nav_component_1.Nav, footer_component_1.Footer]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], UsersComponent);
+    return UsersComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.UsersComponent = UsersComponent;
+;

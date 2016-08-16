@@ -9,16 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var LoginComponent = (function () {
+    function LoginComponent() {
     }
-    AppComponent = __decorate([
+    LoginComponent.prototype.ngOnInit = function () { };
+    LoginComponent = __decorate([
         core_1.Component({
-            selector: 'qls',
-            templateUrl: './app/views/app.component.html'
+            templateUrl: './app/views/admin/login.component.html',
+            styleUrls: ['./app/css/admin/login.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], LoginComponent);
+    return LoginComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.LoginComponent = LoginComponent;

@@ -11,27 +11,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
+var users_module_1 = require('./users.module');
+var admin_module_1 = require('./admin.module');
 var app_component_1 = require('./app.component');
 var app_routing_1 = require('./app.routing');
-var home_component_1 = require('./home.component');
-var about_component_1 = require('./about.component');
-var itil_foundation_component_1 = require('./itil_foundation.component');
-var continual_service_component_1 = require('./continual_service.component');
-var service_operation_component_1 = require('./service_operation.component');
-var service_transition_component_1 = require('./service_transition.component');
-var service_design_component_1 = require('./service_design.component');
-var service_strategy_component_1 = require('./service_strategy.component');
-var soa_component_1 = require('./soa.component');
-var rcv_component_1 = require('./rcv.component');
-var ppo_component_1 = require('./ppo.component');
-var osa_component_1 = require('./osa.component');
-var malc_component_1 = require('./malc.component');
-var capm_component_1 = require('./capm.component');
-var pmp_component_1 = require('./pmp.component');
-var acp_component_1 = require('./acp.component');
-var p2f_component_1 = require('./p2f.component');
-var p2p_component_1 = require('./p2p.component');
-var p2a_component_1 = require('./p2a.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -40,29 +23,12 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
-                app_routing_1.routing
+                app_routing_1.routing,
+                users_module_1.UsersModule,
+                admin_module_1.AdminModule
             ],
             declarations: [
-                app_component_1.AppComponent,
-                home_component_1.HomeComponent,
-                about_component_1.AboutComponent,
-                itil_foundation_component_1.ItitlFoundationComponent,
-                continual_service_component_1.ContinualServiceComponent,
-                service_operation_component_1.ServiceOperationComponenet,
-                service_transition_component_1.ServiceTansitionComponent,
-                service_design_component_1.ServiceDesign,
-                service_strategy_component_1.ServiceStrategyComponent,
-                soa_component_1.SOAComponent,
-                rcv_component_1.RCVComponent,
-                ppo_component_1.PPOComponent,
-                osa_component_1.OSAComponent,
-                malc_component_1.MALCComponent,
-                capm_component_1.CAPMComponent,
-                pmp_component_1.PMPComponent,
-                acp_component_1.ACPComponent,
-                p2f_component_1.P2FComponent,
-                p2p_component_1.P2PComponent,
-                p2a_component_1.P2AComponent
+                app_component_1.AppComponent
             ],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]

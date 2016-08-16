@@ -9,16 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var admin_routing_1 = require('./admin.routing');
+var admin_component_1 = require('./admin.component');
+var login_component_1 = require('./login.component');
+var AdminModule = (function () {
+    function AdminModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'qls',
-            templateUrl: './app/views/app.component.html'
+    AdminModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                admin_routing_1.adminRouting
+            ],
+            declarations: [
+                admin_component_1.AdminComponent,
+                login_component_1.LoginComponent
+            ]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], AdminModule);
+    return AdminModule;
 }());
-exports.AppComponent = AppComponent;
+exports.AdminModule = AdminModule;
