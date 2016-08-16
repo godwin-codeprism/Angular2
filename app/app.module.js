@@ -26,6 +26,12 @@ var rcv_component_1 = require('./rcv.component');
 var ppo_component_1 = require('./ppo.component');
 var osa_component_1 = require('./osa.component');
 var malc_component_1 = require('./malc.component');
+var capm_component_1 = require('./capm.component');
+var pmp_component_1 = require('./pmp.component');
+var acp_component_1 = require('./acp.component');
+var p2f_component_1 = require('./p2f.component');
+var p2p_component_1 = require('./p2p.component');
+var p2a_component_1 = require('./p2a.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -50,7 +56,13 @@ var AppModule = (function () {
                 rcv_component_1.RCVComponent,
                 ppo_component_1.PPOComponent,
                 osa_component_1.OSAComponent,
-                malc_component_1.MALCComponent
+                malc_component_1.MALCComponent,
+                capm_component_1.CAPMComponent,
+                pmp_component_1.PMPComponent,
+                acp_component_1.ACPComponent,
+                p2f_component_1.P2FComponent,
+                p2p_component_1.P2PComponent,
+                p2a_component_1.P2AComponent
             ],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]

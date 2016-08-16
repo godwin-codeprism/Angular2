@@ -13,6 +13,12 @@ var rcv_component_1 = require('./rcv.component');
 var ppo_component_1 = require('./ppo.component');
 var osa_component_1 = require('./osa.component');
 var malc_component_1 = require('./malc.component');
+var capm_component_1 = require('./capm.component');
+var pmp_component_1 = require('./pmp.component');
+var acp_component_1 = require('./acp.component');
+var p2f_component_1 = require('./p2f.component');
+var p2p_component_1 = require('./p2p.component');
+var p2a_component_1 = require('./p2a.component');
 var appRoutes = [
     {
         path: '',
@@ -65,6 +71,30 @@ var appRoutes = [
     {
         path: 'classroom_courses/malc',
         component: malc_component_1.MALCComponent
+    },
+    {
+        path: 'classroom_courses/capm',
+        component: capm_component_1.CAPMComponent
+    },
+    {
+        path: 'classroom_courses/pmp',
+        component: pmp_component_1.PMPComponent
+    },
+    {
+        path: 'classroom_courses/acp',
+        component: acp_component_1.ACPComponent
+    },
+    {
+        path: 'classroom_courses/prince2foundation',
+        component: p2f_component_1.P2FComponent
+    },
+    {
+        path: 'classroom_courses/prince2practitioner',
+        component: p2p_component_1.P2PComponent
+    },
+    {
+        path: 'classroom_courses/prince2agile',
+        component: p2a_component_1.P2AComponent
     }
 ];
 exports.appRoutingProviders = [];

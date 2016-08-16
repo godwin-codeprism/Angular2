@@ -13,6 +13,12 @@ import {RCVComponent} from './rcv.component';
 import {PPOComponent} from './ppo.component';
 import {OSAComponent} from './osa.component';
 import {MALCComponent} from './malc.component';
+import {CAPMComponent} from './capm.component';
+import {PMPComponent} from './pmp.component';
+import {ACPComponent} from './acp.component';
+import {P2FComponent} from './p2f.component';
+import {P2PComponent} from './p2p.component';
+import {P2AComponent} from './p2a.component';
 
 const appRoutes:Routes = [
     {
@@ -66,7 +72,32 @@ const appRoutes:Routes = [
     {
         path:'classroom_courses/malc',
         component:MALCComponent
+    },
+    {
+        path:'classroom_courses/capm',
+        component:CAPMComponent
+    },
+    {
+        path:'classroom_courses/pmp',
+        component:PMPComponent
+    },
+    {
+        path:'classroom_courses/acp',
+        component:ACPComponent
+    },
+    {
+        path:'classroom_courses/prince2foundation',
+        component:P2FComponent
+    },
+    {
+        path:'classroom_courses/prince2practitioner',
+        component:P2PComponent
+    },
+    {
+        path:'classroom_courses/prince2agile',
+        component:P2AComponent
     }
+    
 ];
 
 export const appRoutingProviders:any[] = [

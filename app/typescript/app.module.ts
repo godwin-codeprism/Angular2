@@ -18,6 +18,12 @@ import {RCVComponent} from './rcv.component';
 import {PPOComponent} from './ppo.component';
 import {OSAComponent} from './osa.component';
 import {MALCComponent} from './malc.component';
+import {CAPMComponent} from './capm.component';
+import {PMPComponent} from './pmp.component';
+import {ACPComponent} from './acp.component';
+import {P2FComponent} from './p2f.component';
+import {P2PComponent} from './p2p.component';
+import {P2AComponent} from './p2a.component';
 
 @NgModule({
     imports: [
@@ -39,9 +45,16 @@ import {MALCComponent} from './malc.component';
         RCVComponent,
         PPOComponent,
         OSAComponent,
-        MALCComponent
+        MALCComponent,
+        CAPMComponent,
+        PMPComponent,
+        ACPComponent,
+        P2FComponent,
+        P2PComponent,
+        P2AComponent
         ],
     providers: [appRoutingProviders],
     bootstrap: [AppComponent]
 })
+
 export class AppModule { };
