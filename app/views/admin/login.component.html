@@ -4,16 +4,16 @@
             <div class="col-sm-12 login-heading">
                 <h2 class="lead">Please Login</h2>
             </div>
-            <form>
+            <form (ngSubmit)="onLogin()" #loginForm="ngForm">
                 <div class="text-left form-login">
                     <div class="form-group">
                         <label>Username</label>
-                        <input type="text" class="form-control" placeholder="Username">
+                        <input type="text" class="form-control" [(ngModel)]="username" name="username" placeholder="Username">
                     </div>
                     <br/>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Password">
                     </div>
                     <br/>
                     <div class="form-group text-center">
