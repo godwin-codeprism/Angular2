@@ -15,7 +15,8 @@ var DashboardComponent = (function () {
     DashboardComponent.prototype.ngOnInit = function () { };
     DashboardComponent = __decorate([
         core_1.Component({
-            templateUrl: './app/views/admin/dashboard.component.html'
+            templateUrl: './app/views/admin/dashboard.component.html',
+            styleUrls: ['./app/css/admin/dashboard.css']
         }), 
         __metadata('design:paramtypes', [])
     ], DashboardComponent);
