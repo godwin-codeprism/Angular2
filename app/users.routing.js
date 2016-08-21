@@ -20,6 +20,12 @@ var acp_component_1 = require('./acp.component');
 var p2f_component_1 = require('./p2f.component');
 var p2p_component_1 = require('./p2p.component');
 var p2a_component_1 = require('./p2a.component');
+var scrum_component_1 = require('./scrum.component');
+var msp_component_1 = require('./msp.component');
+var green_belt_component_1 = require('./green_belt.component');
+var black_belt_component_1 = require('./black_belt.component');
+var cobit_component_1 = require('./cobit.component');
+var togaf_component_1 = require('./togaf.component');
 var usersRoutes = [
     {
         path: '',
@@ -100,6 +106,30 @@ var usersRoutes = [
             {
                 path: 'prince2agile',
                 component: p2a_component_1.P2AComponent
+            },
+            {
+                path: 'scrum',
+                component: scrum_component_1.ScrumComponent
+            },
+            {
+                path: 'msp',
+                component: msp_component_1.MSPComponent
+            },
+            {
+                path: 'green_belt',
+                component: green_belt_component_1.GreenBeltComponent
+            },
+            {
+                path: 'black_belt',
+                component: black_belt_component_1.BlackBeltComponent
+            },
+            {
+                path: 'cobit',
+                component: cobit_component_1.CobitComponent
+            },
+            {
+                path: 'togaf',
+                component: togaf_component_1.TOGAFComponent
             }
         ]
     }

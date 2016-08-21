@@ -24,6 +24,12 @@ import {ACPComponent} from './acp.component';
 import {P2FComponent} from './p2f.component';
 import {P2PComponent} from './p2p.component';
 import {P2AComponent} from './p2a.component';
+import {ScrumComponent} from './scrum.component';
+import {MSPComponent} from './msp.component';
+import {GreenBeltComponent} from './green_belt.component';
+import {BlackBeltComponent} from './black_belt.component';
+import {CobitComponent} from './cobit.component';
+import {TOGAFComponent} from './togaf.component';
 
 @NgModule({
     imports: [
@@ -51,7 +57,13 @@ import {P2AComponent} from './p2a.component';
         ACPComponent,
         P2FComponent,
         P2PComponent,
-        P2AComponent
+        P2AComponent,
+        ScrumComponent,
+        MSPComponent,
+        GreenBeltComponent,
+        BlackBeltComponent,
+        CobitComponent,
+        TOGAFComponent
     ]
 })
 export class UsersModule {}

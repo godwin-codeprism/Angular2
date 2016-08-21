@@ -32,6 +32,12 @@ var acp_component_1 = require('./acp.component');
 var p2f_component_1 = require('./p2f.component');
 var p2p_component_1 = require('./p2p.component');
 var p2a_component_1 = require('./p2a.component');
+var scrum_component_1 = require('./scrum.component');
+var msp_component_1 = require('./msp.component');
+var green_belt_component_1 = require('./green_belt.component');
+var black_belt_component_1 = require('./black_belt.component');
+var cobit_component_1 = require('./cobit.component');
+var togaf_component_1 = require('./togaf.component');
 var UsersModule = (function () {
     function UsersModule() {
     }
@@ -62,7 +68,13 @@ var UsersModule = (function () {
                 acp_component_1.ACPComponent,
                 p2f_component_1.P2FComponent,
                 p2p_component_1.P2PComponent,
-                p2a_component_1.P2AComponent
+                p2a_component_1.P2AComponent,
+                scrum_component_1.ScrumComponent,
+                msp_component_1.MSPComponent,
+                green_belt_component_1.GreenBeltComponent,
+                black_belt_component_1.BlackBeltComponent,
+                cobit_component_1.CobitComponent,
+                togaf_component_1.TOGAFComponent
             ]
         }), 
         __metadata('design:paramtypes', [])

@@ -20,6 +20,12 @@ import {ACPComponent} from './acp.component';
 import {P2FComponent} from './p2f.component';
 import {P2PComponent} from './p2p.component';
 import {P2AComponent} from './p2a.component';
+import {ScrumComponent} from './scrum.component';
+import {MSPComponent} from './msp.component';
+import {GreenBeltComponent} from './green_belt.component';
+import {BlackBeltComponent} from './black_belt.component';
+import {CobitComponent} from './cobit.component';
+import {TOGAFComponent} from './togaf.component';
 
 const usersRoutes: Routes = [
     {
@@ -101,6 +107,30 @@ const usersRoutes: Routes = [
             {
                 path: 'prince2agile',
                 component: P2AComponent
+            },
+            {
+                path: 'scrum',
+                component: ScrumComponent
+            },
+            {
+                path: 'msp',
+                component: MSPComponent
+            },
+            {
+                path: 'green_belt',
+                component: GreenBeltComponent
+            },
+            {
+                path: 'black_belt',
+                component: BlackBeltComponent
+            },
+            {
+                path: 'cobit',
+                component: CobitComponent
+            },
+            {
+                path:'togaf',
+                component: TOGAFComponent
             }
         ]
     }
