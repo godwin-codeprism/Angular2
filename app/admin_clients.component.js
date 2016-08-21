@@ -9,16 +9,50 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AdminClinetsComponent = (function () {
-    function AdminClinetsComponent() {
+var http_1 = require('@angular/http');
+var ng2_uploader_1 = require('ng2-uploader');
+require('rxjs/add/operator/map');
+var AdminClientsComponent = (function () {
+    function AdminClientsComponent(http) {
+        this.http = http;
+        this.options = {
+            url: './app/endpoints/uploadclient.php'
+        };
     }
-    AdminClinetsComponent.prototype.ngOnInit = function () { };
-    AdminClinetsComponent = __decorate([
+    AdminClientsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.getClient().subscribe(function (res) {
+            _this.clients = res;
+        });
+    };
+    AdminClientsComponent.prototype.handleUpload = function (data) {
+        if (data && data.response) {
+            data = JSON.parse(data.response);
+            this.uploadFile = data;
+        }
+    };
+    AdminClientsComponent.prototype.getClient = function () {
+        return this.http.get('./data/clients/clients.json').map(function (res) { return res.json(); });
+    };
+    AdminClientsComponent.prototype.addClient = function () {
+        var _this = this;
+        var data = {
+            name: this.name,
+            logo: './data/clients/images/' + this.uploadFile.generatedName
+        };
+        this.clients.push(data);
+        this.http.post('./app/endpoints/postclients.php', this.clients).subscribe(function (res) {
+            _this.name = "";
+        });
+    };
+    AdminClientsComponent = __decorate([
         core_1.Component({
-            templateUrl: './app/views/admin/admin_clients.component.html'
+            templateUrl: './app/views/admin/admin_clients.component.html',
+            styleUrls: ['./app/css/admin/admin_events.css'],
+            directives: [ng2_uploader_1.UPLOAD_DIRECTIVES]
         }), 
-        __metadata('design:paramtypes', [])
-    ], AdminClinetsComponent);
-    return AdminClinetsComponent;
+        __metadata('design:paramtypes', [http_1.Http])
+    ], AdminClientsComponent);
+    return AdminClientsComponent;
 }());
-exports.AdminClinetsComponent = AdminClinetsComponent;
+exports.AdminClientsComponent = AdminClientsComponent;

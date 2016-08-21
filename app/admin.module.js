@@ -35,7 +35,7 @@ var AdminModule = (function () {
                 dashboard_component_1.DashboardComponent,
                 admin_events_component_1.AdminEventsComponent,
                 admin_testimonials_component_1.AdminTestimonialsComponent,
-                admin_clients_component_1.AdminClinetsComponent
+                admin_clients_component_1.AdminClientsComponent
             ],
             providers: [
                 http_1.HTTP_PROVIDERS

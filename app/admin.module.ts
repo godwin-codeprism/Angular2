@@ -9,7 +9,7 @@ import {LoginComponent} from './login.component';
 import {DashboardComponent} from './dashboard.component';
 import {AdminEventsComponent} from './admin_events.component';
 import {AdminTestimonialsComponent} from './admin_testimonials.component';
-import {AdminClinetsComponent} from './admin_clients.component';
+import {AdminClientsComponent} from './admin_clients.component';
 
 @NgModule({
     imports:[
@@ -23,7 +23,7 @@ import {AdminClinetsComponent} from './admin_clients.component';
         DashboardComponent,
         AdminEventsComponent,
         AdminTestimonialsComponent,
-        AdminClinetsComponent
+        AdminClientsComponent
     ],
     providers:[
         HTTP_PROVIDERS

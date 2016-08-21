@@ -29,7 +29,7 @@ exports.adminRoutes = [
                     },
                     {
                         path: 'clients',
-                        component: admin_clients_component_1.AdminClinetsComponent
+                        component: admin_clients_component_1.AdminClientsComponent
                     },
                     {
                         path: '',
