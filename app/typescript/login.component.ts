@@ -45,6 +45,7 @@ export class LoginComponent implements OnInit {
             if(res.json() !== "ERROR")
             {
                 localStorage.setItem('qlstoken', res.json());
+                this.router.navigate(['/dashboard']);
             }else{
                 console.log('Incorrect username or password');
             }

@@ -37,6 +37,7 @@ var LoginComponent = (function () {
         }
     };
     LoginComponent.prototype.onLogin = function () {
+        var _this = this;
         var data = {
             username: this.username,
             password: this.password
@@ -44,6 +45,7 @@ var LoginComponent = (function () {
         this.http.post('./app/endpoints/login.php', data).subscribe(function (res) {
             if (res.json() !== "ERROR") {
                 localStorage.setItem('qlstoken', res.json());
+                _this.router.navigate(['/dashboard']);
             }
             else {
                 console.log('Incorrect username or password');

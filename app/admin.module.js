@@ -15,6 +15,7 @@ var admin_routing_1 = require('./admin.routing');
 var admin_component_1 = require('./admin.component');
 var login_component_1 = require('./login.component');
 var dashboard_component_1 = require('./dashboard.component');
+var admin_events_component_1 = require('./admin_events.component');
 var AdminModule = (function () {
     function AdminModule() {
     }
@@ -22,12 +23,13 @@ var AdminModule = (function () {
         core_1.NgModule({
             imports: [
                 admin_routing_1.adminRouting,
-                forms_1.FormsModule
+                forms_1.FormsModule,
             ],
             declarations: [
                 admin_component_1.AdminComponent,
                 login_component_1.LoginComponent,
-                dashboard_component_1.DashboardComponent
+                dashboard_component_1.DashboardComponent,
+                admin_events_component_1.AdminEventsComponent
             ],
             providers: [
                 http_1.HTTP_PROVIDERS
