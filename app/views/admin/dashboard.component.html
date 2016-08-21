@@ -19,8 +19,8 @@
 </nav>
 
 <div class="container-fluid" style="padding-left:0px">
-  <div class="row logo">
-    <div class="col-lg-3 logo2">
+  <div class="row logo navbar-fixed-top">
+    <div class="col-lg-2 logo2">
       <img src="./app/images/logo_nav.png" alt="QuickLearn Systems">
     </div>
   </div>
@@ -28,12 +28,13 @@
     <div class="col-sm-3 sidenav hidden-xs sidebar">
       <p class="nav-titles">Components</p>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1"><span class="glyphicon glyphicon-flag"></span>&nbsp;Events</a></li>
-        <li><a href="#section2"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Testimonial</a></li>
-        <li><a href="#section3"><span class="glyphicon glyphicon-user"></span> &nbsp;Clients</a></li>
+        <li routerLink="events" routerLinkActive='active'><a><span class="glyphicon glyphicon-flag"></span>&nbsp;Events</a></li>
+        <li routerLink="testimonials" routerLinkActive='active'><a><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Testimonial</a></li>
+        <li routerLink="clients" routerLinkActive='active'><a><span class="glyphicon glyphicon-user"></span> &nbsp;Clients</a></li>
       </ul><br>
     </div>
-    <br>
-    <router-outlet></router-outlet>
+    <div class="container content_main">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

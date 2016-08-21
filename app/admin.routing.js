@@ -4,6 +4,8 @@ var admin_component_1 = require('./admin.component');
 var login_component_1 = require('./login.component');
 var dashboard_component_1 = require('./dashboard.component');
 var admin_events_component_1 = require('./admin_events.component');
+var admin_testimonials_component_1 = require('./admin_testimonials.component');
+var admin_clients_component_1 = require('./admin_clients.component');
 exports.adminRoutes = [
     {
         path: '',
@@ -20,6 +22,19 @@ exports.adminRoutes = [
                     {
                         path: 'events',
                         component: admin_events_component_1.AdminEventsComponent
+                    },
+                    {
+                        path: 'testimonials',
+                        component: admin_testimonials_component_1.AdminTestimonialsComponent
+                    },
+                    {
+                        path: 'clients',
+                        component: admin_clients_component_1.AdminClinetsComponent
+                    },
+                    {
+                        path: '',
+                        redirectTo: 'events',
+                        pathMatch: 'full'
                     }
                 ]
             }

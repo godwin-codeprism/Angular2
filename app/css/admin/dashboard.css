@@ -19,6 +19,7 @@
     background: -o-linear-gradient(-65deg,#008fe2 0,#00b29c 100%);
     background: -ms-linear-gradient(-65deg,#008fe2 0,#00b29c 100%);
     background: linear-gradient(154deg,#008fe2 0,#00b29c 100%);
+    box-shadow: 2px 0 3px rgba(0,0,0,.5);
 }
 .sidenav {
     background-color: #172b3f;
@@ -35,7 +36,9 @@
     background-color: #102437;
     border: .4px solid #172b3f;
 }
-
+.nav-pills>li{
+    cursor: pointer;
+}
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     color: #fff;
     background-color: #2c3e50;
@@ -58,10 +61,26 @@ li a:hover{
 .logo2{
     background-color: #006fd8;
     height: 80px;
+    min-width: 233px;
     text-align: center;
     padding-top: 20px;
 }
 .sidebar{
     padding-right: 0px;
     padding-top: 15px;
+    width: 233px;
+    top: 75px;
+    z-index: 904;
+    display: block;
+    min-height: 100%;
+    background-color: #1C2B36;
+    height: 100%;
+    position: fixed;
+        box-shadow: 2px 0 3px rgba(0,0,0,.5);
+}
+.content_main{
+    margin-left: 194px;
+    margin-top:75px;
+    padding: 10px 18px 18px;
+    min-height: 500px;
 }

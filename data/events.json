@@ -1,6 +1,112 @@
-[{
-    "training":"ITIL Foundation",
-    "date":"19 & 20 March 2016",
-    "location":"Hyderabad",
-    "link":""
-}]
+[
+  {
+    "training": "ITIL Foundation",
+    "date": "19 & 20 March 2016",
+    "location": "Hyderabad",
+    "link": " "
+  },
+  {
+    "training": "ITIL Foundation",
+    "date": "02 & 03 April 2016",
+    "location": "Hyderabad",
+    "link": " "
+  },
+  {
+    "training": "ITIL Foundation",
+    "date": "Contact Us",
+    "location": "Bangalore",
+    "link": " "
+  },
+  {
+    "training": "Service Design (SD)",
+    "date": "02 & 03 April 2016",
+    "location": "Hyderabad"
+  },
+  {
+    "training": "Service Operation (SO)",
+    "date": "26 & 27 March 2016",
+    "location": "Hyderabad",
+    "link": ""
+  },
+  {
+    "training": "Continual Service Improvement (CSI)",
+    "date": "16 & 17 April 2016",
+    "location": "Hyderabad",
+    "link": ""
+  },
+  {
+    "training": "ITIL Expert (MALC)",
+    "date": "Contact Us",
+    "location": "Hyderabad",
+    "link": ""
+  },
+  {
+    "training": "CAPM Certification Training",
+    "date": "16, 17, 23 & 24 April 2016",
+    "location": "Hyderabad",
+    "link": ""
+  },
+  {
+    "training": "CAPM Certification Training",
+    "date": "Contact Us",
+    "location": "Bangalore",
+    "link": ""
+  },
+  {
+    "training": "Prince2 Foundation & Practitioner Training",
+    "date": "19, 20 & 26 March 2016",
+    "location": "Hyderabad"
+  },
+  {
+    "training": "Prince2 Foundation & Practitioner Training",
+    "date": "19, 20 & 26 March 2016",
+    "location": "Bangalore",
+    "link": ""
+  },
+  {
+    "training": "PRINCE2 AGILE Training",
+    "date": "26 & 27 March 2016",
+    "location": "Hyderabad"
+  },
+  {
+    "training": "Certified Scrum Master Training (CSM®)",
+    "date": "26 & 27 March 2016",
+    "location": "Hyderabad",
+    "link": ""
+  },
+  {
+    "training": "Managing Successful Program Foundation & Practitioner Training & Certification",
+    "date": "19, 20, 26 & 27 March 2016",
+    "location": "Hyderabad",
+    "link": ""
+  },
+  {
+    "training": "COBIT 5 Foundation Training",
+    "date": "02 & 03 April 2016",
+    "location": "Hyderabad"
+  },
+  {
+    "training": "TOGAF 9.1 Level1 & Level2 Training & Certification",
+    "date": "26, 27 March, 02 & 03 April 2016",
+    "location": "Hyderabad",
+    "link": ""
+  },
+  {
+    "training": "Six Sigma Green Belt Training & Certification",
+    "date": "26 & 27 March 2016",
+    "location": "Hyderabad",
+    "link": ""
+  },
+  {
+    "training": "Six Sigma Black Belt Training & Certification",
+    "date": "23, 24, 30 April & 01 May 2016",
+    "location": "Hyderabad",
+    "link": ""
+  },
+  {
+    "training": "Cloud Computing Foundation Training",
+    "date": "Contact Us",
+    "location": "Hyderabad",
+    "link": ""
+  }
+]

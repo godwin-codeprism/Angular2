@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
 var admin_routing_1 = require('./admin.routing');
@@ -16,12 +17,15 @@ var admin_component_1 = require('./admin.component');
 var login_component_1 = require('./login.component');
 var dashboard_component_1 = require('./dashboard.component');
 var admin_events_component_1 = require('./admin_events.component');
+var admin_testimonials_component_1 = require('./admin_testimonials.component');
+var admin_clients_component_1 = require('./admin_clients.component');
 var AdminModule = (function () {
     function AdminModule() {
     }
     AdminModule = __decorate([
         core_1.NgModule({
             imports: [
+                platform_browser_1.BrowserModule,
                 admin_routing_1.adminRouting,
                 forms_1.FormsModule,
             ],
@@ -29,7 +33,9 @@ var AdminModule = (function () {
                 admin_component_1.AdminComponent,
                 login_component_1.LoginComponent,
                 dashboard_component_1.DashboardComponent,
-                admin_events_component_1.AdminEventsComponent
+                admin_events_component_1.AdminEventsComponent,
+                admin_testimonials_component_1.AdminTestimonialsComponent,
+                admin_clients_component_1.AdminClinetsComponent
             ],
             providers: [
                 http_1.HTTP_PROVIDERS

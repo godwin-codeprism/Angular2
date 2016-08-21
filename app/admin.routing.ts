@@ -4,6 +4,8 @@ import {AdminComponent} from './admin.component';
 import {LoginComponent} from './login.component';
 import {DashboardComponent} from './dashboard.component';
 import {AdminEventsComponent} from './admin_events.component';
+import {AdminTestimonialsComponent} from './admin_testimonials.component';
+import {AdminClinetsComponent} from './admin_clients.component';
 
 export const adminRoutes:Routes = [
     {
@@ -21,6 +23,19 @@ export const adminRoutes:Routes = [
                     {
                         path:'events',
                         component:AdminEventsComponent
+                    },
+                    {
+                        path:'testimonials',
+                        component:AdminTestimonialsComponent
+                    },
+                    {
+                        path:'clients',
+                        component:AdminClinetsComponent
+                    },
+                    {
+                        path:'',
+                        redirectTo:'events',
+                        pathMatch:'full'
                     }
                 ]
             }

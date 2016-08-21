@@ -1,0 +1,7 @@
+<div class="container-fluid">
+    <h2>Testimonials</h2>
+        <input type="file" [ng-file-select]="options" (onUpload)="handleUpload($event)">
+    <div>
+        Response: {{ uploadFile | json }}
+    </div>
+</div>
