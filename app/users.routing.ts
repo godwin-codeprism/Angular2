@@ -26,6 +26,8 @@ import {GreenBeltComponent} from './green_belt.component';
 import {BlackBeltComponent} from './black_belt.component';
 import {CobitComponent} from './cobit.component';
 import {TOGAFComponent} from './togaf.component';
+import {UpcomingEventsComponent} from './upcoming.events.component';
+import {ServicesComponent} from './services.component';
 
 const usersRoutes: Routes = [
     {
@@ -131,6 +133,14 @@ const usersRoutes: Routes = [
             {
                 path:'togaf',
                 component: TOGAFComponent
+            },
+            {
+                path:'upcoming_events',
+                component: UpcomingEventsComponent
+            },
+            {
+                path:'services',
+                component: ServicesComponent
             }
         ]
     }

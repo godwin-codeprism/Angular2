@@ -8,21 +8,35 @@ interface EventList {
     location: string,
     link: string
 }
+interface OnlineEventList {
+    training: string,
+    date: string,
+    location: string,
+    link: string
+}
 @Component({
     templateUrl: './app/views/admin/admin_events.component.html',
     styleUrls: ['./app/css/admin/admin_events.css']
 })
 export class AdminEventsComponent implements OnInit {
     private events: EventList[];
+    private onlineEvents: OnlineEventList[];
     training: string;
     date: string;
     location: string;
     link: string;
+    onlineTraining: string;
+    onlineDate: string;
+    onlineLocation: string;
+    onlineLink: string;
     constructor(private http: Http) { }
 
     ngOnInit() {
         this.getEventsList().subscribe(res => {
             this.events = res;
+        });
+        this.getOnlineEventsList().subscribe(res => {
+            this.onlineEvents = res;
         });
     }
 
@@ -42,6 +56,24 @@ export class AdminEventsComponent implements OnInit {
             this.date = '';
             this.location = '';
             this.link = '';
+        });
+    }
+     getOnlineEventsList(): Observable<EventList[]> {
+        return this.http.get('./data/online_events.json').map(res => res.json());
+    }
+    addOnlineEvent() {
+        var onlineData = {
+            training: this.onlineTraining,
+            date: this.onlineDate,
+            location: this.onlineLocation,
+            link: this.onlineLink
+        };
+        this.onlineEvents.push(onlineData);
+        this.http.post('./app/endpoints/postonlineevents.php',this.onlineEvents).subscribe(res=>{
+            this.onlineTraining = '';
+            this.onlineDate = '';
+            this.onlineLocation = '';
+            this.onlineLink = '';
         });
     }
 }

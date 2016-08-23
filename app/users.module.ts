@@ -30,6 +30,8 @@ import {GreenBeltComponent} from './green_belt.component';
 import {BlackBeltComponent} from './black_belt.component';
 import {CobitComponent} from './cobit.component';
 import {TOGAFComponent} from './togaf.component';
+import {UpcomingEventsComponent} from './upcoming.events.component';
+import {ServicesComponent} from './services.component';
 
 @NgModule({
     imports: [
@@ -63,7 +65,9 @@ import {TOGAFComponent} from './togaf.component';
         GreenBeltComponent,
         BlackBeltComponent,
         CobitComponent,
-        TOGAFComponent
+        TOGAFComponent,
+        UpcomingEventsComponent,
+        ServicesComponent
     ]
 })
 export class UsersModule {}

@@ -20,6 +20,9 @@ var AdminEventsComponent = (function () {
         this.getEventsList().subscribe(function (res) {
             _this.events = res;
         });
+        this.getOnlineEventsList().subscribe(function (res) {
+            _this.onlineEvents = res;
+        });
     };
     AdminEventsComponent.prototype.getEventsList = function () {
         return this.http.get('./data/events.json').map(function (res) { return res.json(); });
@@ -38,6 +41,25 @@ var AdminEventsComponent = (function () {
             _this.date = '';
             _this.location = '';
             _this.link = '';
+        });
+    };
+    AdminEventsComponent.prototype.getOnlineEventsList = function () {
+        return this.http.get('./data/online_events.json').map(function (res) { return res.json(); });
+    };
+    AdminEventsComponent.prototype.addOnlineEvent = function () {
+        var _this = this;
+        var onlineData = {
+            training: this.onlineTraining,
+            date: this.onlineDate,
+            location: this.onlineLocation,
+            link: this.onlineLink
+        };
+        this.onlineEvents.push(onlineData);
+        this.http.post('./app/endpoints/postonlineevents.php', this.onlineEvents).subscribe(function (res) {
+            _this.onlineTraining = '';
+            _this.onlineDate = '';
+            _this.onlineLocation = '';
+            _this.onlineLink = '';
         });
     };
     AdminEventsComponent = __decorate([

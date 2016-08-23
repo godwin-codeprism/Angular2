@@ -26,6 +26,8 @@ var green_belt_component_1 = require('./green_belt.component');
 var black_belt_component_1 = require('./black_belt.component');
 var cobit_component_1 = require('./cobit.component');
 var togaf_component_1 = require('./togaf.component');
+var upcoming_events_component_1 = require('./upcoming.events.component');
+var services_component_1 = require('./services.component');
 var usersRoutes = [
     {
         path: '',
@@ -130,6 +132,14 @@ var usersRoutes = [
             {
                 path: 'togaf',
                 component: togaf_component_1.TOGAFComponent
+            },
+            {
+                path: 'upcoming_events',
+                component: upcoming_events_component_1.UpcomingEventsComponent
+            },
+            {
+                path: 'services',
+                component: services_component_1.ServicesComponent
             }
         ]
     }

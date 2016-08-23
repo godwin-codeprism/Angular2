@@ -38,6 +38,8 @@ var green_belt_component_1 = require('./green_belt.component');
 var black_belt_component_1 = require('./black_belt.component');
 var cobit_component_1 = require('./cobit.component');
 var togaf_component_1 = require('./togaf.component');
+var upcoming_events_component_1 = require('./upcoming.events.component');
+var services_component_1 = require('./services.component');
 var UsersModule = (function () {
     function UsersModule() {
     }
@@ -74,7 +76,9 @@ var UsersModule = (function () {
                 green_belt_component_1.GreenBeltComponent,
                 black_belt_component_1.BlackBeltComponent,
                 cobit_component_1.CobitComponent,
-                togaf_component_1.TOGAFComponent
+                togaf_component_1.TOGAFComponent,
+                upcoming_events_component_1.UpcomingEventsComponent,
+                services_component_1.ServicesComponent
             ]
         }), 
         __metadata('design:paramtypes', [])
